@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task 6 - Login Validation</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body ng-app="">
+  <h2>Login Validation System</h2>
+  Username: <input type="text" ng-model="username"><br><br>
+  Password: <input type="password" ng-model="password"><br><br>
+
+  <button ng-click="checkLogin = true">Login</button>
+
+  <p ng-if="checkLogin && username=='admin' && password=='1234'">
+    Login Successful
+  </p>
+  <p ng-if="checkLogin && !(username=='admin' && password=='1234')">
+    Invalid Credentials
+  </p>
+
+</body>
+</html>

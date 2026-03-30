@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AngularJS Lab</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body ng-app="">
+    <h2>Simple Calculator</h2>
+
+  Enter First Number: <input type="number" ng-model="num1"><br><br>
+  Enter Second Number: <input type="number" ng-model="num2"><br><br>
+
+  <h3>Results</h3>
+  <p>Addition: {{num1 + num2}}</p>
+  <p>Subtraction: {{num1 - num2}}</p>
+  <p>Multiplication: {{num1 * num2}}</p>
+  <p>Division: {{num1 / num2}}</p>
+
+</body>
+</html>

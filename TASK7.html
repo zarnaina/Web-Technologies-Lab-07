@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task 7 - Show/Hide Password</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body ng-app="">
+    
+  <h2>Show / Hide Password</h2>
+  Password:
+  <input type="{{showPass ? 'text' : 'password'}}" ng-model="password"><br><br>
+  <input type="checkbox" ng-model="showPass"> Show Password
+  <p>Your Password: {{password}}</p>
+
+</body>
+</html>

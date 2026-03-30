@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AngularJS Lab</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+
+<body ng-app="">
+  <h2>Student Information Form</h2>
+  <label>Name:</label><br>
+  <input type="text" ng-model="studentName" placeholder="Enter your name"><br><br>
+
+  <label>Roll Number:</label><br>
+  <input type="text" ng-model="rollNumber" placeholder="Enter your roll number"><br><br>
+
+  <label>Department:</label><br>
+  <input type="text" ng-model="department" placeholder="Enter your department"><br><br>
+
+  <h3>Student Details</h3>
+  <p>Name: {{studentName}}</p>
+  <p>Roll Number: {{rollNumber}}</p>
+  <p>Department: {{department}}</p>
+
+</body>
+</html>
